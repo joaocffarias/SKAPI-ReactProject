@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Aplicativo React para Consumo da Stephen King API
+Trabalho desenvolvimento por João Carlos F. de Farias e Núbia Gonçalves dos Santos Tirabassi para contemplar a discipllina de desenvolvimento mobile II - IPOG.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Visão Geral
+O objetivo deste projeto é desenvolver um aplicativo React que consuma a Stephen King API, permitindo que os usuários visualizem uma lista de livros escritos por Stephen King e acessem detalhes sobre deles. O aplicativo tem uma interface simples para listagem e exibição dos livros ao clicar em título.
 
-## Available Scripts
+# Funcionalidades
+Listagem de Livros: O aplicativo fará uma requisição para a API para obter uma lista dos livros disponíveis. Os dados serão exibidos em uma lista.
 
-In the project directory, you can run:
+Detalhes do Livro: Ao clicar em um título, o usuário será redirecionado para uma página de detalhes, onde informações adicionais, como sinopse, ano de publicação e gênero, serão exibidas.
 
-### `npm start`
+# Tecnologias Utilizadas
+React/React Native: Para construção da interface do usuário.
+Axios: Para realizar as requisições HTTP à API.
+React Router: Para navegação entre a lista de livros e a página de detalhes.
+CSS/Styled Components: Para estilização do aplicativo.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Fluxo de Trabalho
+O aplicativo inicia na página principal (Home.tsx), onde a lista de livros é carregada a partir da Stephen King API.
+O usuário vê a lista de livros e pode clicar em qualquer título.
+O aplicativo redireciona o usuário para a página de detalhes (Details.tsx), onde as informações adicionais sobre o livro são exibidas.
+O usuário pode retornar à lista de livros para continuar navegando.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Para as requisições
+Obter lista de livros: GET https://stephen-king-api.onrender.com/api/books
+Obter detalhes de um livro específico: GET https://stephen-king-api.onrender.com/api/book/{id}
+Obter lista de livros: GET https://stephen-king-api.onrender.com/api/villains
+Obter detalhes de um livro específico: GET https://stephen-king-api.onrender.com/api/villain/{id}
